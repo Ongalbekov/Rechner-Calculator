@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #afe2b3;
+}
+#calculator{
+    background-color: rgb(216, 188, 150);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+#display{
+    background-color: aqua;
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset 0px 5px 0px rgba(0,0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+p#numbers{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    padding:  25px;
+    overflow-x: scroll;
+    
+}
+#buttons{
+    display:grid;
+    grid-template-columns: repeat(4, 45px);
+    grid-gap: 10px;
+}
+#buttons button{
+    border: none;
+    background-color: rgb(176, 125, 15);
+    color: white;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 30px;
+}
+#clear{
+    grid-row: span 2;
+}
+#enter{
+    grid-row: span 2 ;
+}
+#zero{
+    grid-column: span 2;
+}
+#buttons button:active{
+    box-shadow: 0 0 0 rgb(176, 125, 15);
+    transform: translate(0, 4px);
+}
